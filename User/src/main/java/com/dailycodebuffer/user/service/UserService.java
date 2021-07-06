@@ -31,7 +31,8 @@ public class UserService {
         ResponseTemplateVO responseTemplateVO = new ResponseTemplateVO();
         User user = userRepository.getByUserId(id);
         Department department = restTemplate.
-                getForObject("http://localhost:9001/departments/"+user.getUserId(), Department.class);
+                getForObject("http://DEPARTMENT-SERVICE/departments/" +user.getUserId(), Department.class);
+
         responseTemplateVO.setUser(user);
         responseTemplateVO.setDepartment(department);
         return responseTemplateVO;
