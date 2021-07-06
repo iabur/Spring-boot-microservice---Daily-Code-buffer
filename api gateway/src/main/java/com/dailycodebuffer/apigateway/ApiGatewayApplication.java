@@ -1,4 +1,4 @@
-package com.dailycodebuffer.department;
+package com.dailycodebuffer.apigateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,10 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
 @EnableEurekaClient
-public class DepartmentApplication {
+public class ApiGatewayApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DepartmentApplication.class, args);
+        SpringApplication.run(ApiGatewayApplication.class, args);
     }
 
 }
